@@ -13,3 +13,7 @@ export const firebaseConfig = {
   appId: "..."
 };
 ```
+
+![emptydata](./img/pic1.jpg)
+
+![data](./img/pic2.jpg)

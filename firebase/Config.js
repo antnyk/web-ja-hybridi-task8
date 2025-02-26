@@ -1,19 +1,21 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, serverTimestamp, query, onSnapshot } from "firebase/firestore";
+import { deleteDoc, doc, getFirestore, collection, addDoc, serverTimestamp, query, onSnapshot } from "firebase/firestore";
 import { firebaseConfig } from "./API";
 
 initializeApp(firebaseConfig);
 
 const firestore = getFirestore()
 
-const MESSAGES = 'messages'
+const GROCERIES = 'groceries'
 
 export {
   firestore,
   collection,
   addDoc,
   serverTimestamp,
-  MESSAGES,
+  GROCERIES,
   query,
-  onSnapshot
+  onSnapshot,
+  deleteDoc,
+  doc
 }
